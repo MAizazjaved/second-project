@@ -1,11 +1,197 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  
+<div class="container">
+   <div class="row">
+        
+        <div class="col-md-6">
+            <p class="DP">profile picture</p>
+            <img src="/images/768px-Circle-icons-profile.svg.png" alt="768px-Circle-icons-profile" height="50">
+        
+        </div>
+
+        <div class="col-md-6">
+            <h3>Father details</h3>
+          <div class="row">     
+            <div class="col-md-6">
+                <p>Name</p>
+                <input type="text" placeholder="Enter your father name">
+            </div>
+            <div class="col-md-6">
+                <p>NRIC</p>
+                <input type="number" placeholder="Enter your father NRIC Number">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+               <div class="col-md-6">
+                  <p>Phone number</p>
+                  <input type="number" placeholder="phone">
+               </div>
+               <div class="col-md-6">
+                 
+                </div>
+
+          </div>
+
+          <br>
+          <h3>Mothers details</h3>
+          <div class="row">
+              <div class="col-md-6">
+                  <p>Name</p>
+                  <input type="text" placeholder="Enter your mother name">
+              </div>
+              <div class="col-md-6">
+                  <p>NRIC</p>
+                  <input type="number" placeholder="Enter your mother NRIC Number">
+              </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="col-md-6">
+                 <p>Phone number</p>
+                 <input type="number" placeholder="phone">
+              </div>
+              <div class="col-md-6">
+                
+               </div>
+
+         </div>
+              
+            
+          </div>  
+            
+
+        </div>
+
+        <h3>Contact details</h3>
+        <div class="row">
+            <div class="col-md-4">
+                    <p>Email</p>
+                    <input type="email" placeholder="enter your email">
+                    
+
+
+            </div>
+            <div class="col-md-8">
+                <p>Address</p>
+                <input type="text" placeholder="enter your Address">
+              </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                 <p>Email date</p>
+                 <input type="date" >
+            </div>
+            <div class="col-md-8">
+
+            </div>
+        </div>
+         <br><br><br>
+         <h3>Student1 details</h3>
+         <hr/>
+
+         <div class="row">
+            <div class="col-md-4">
+                    <p>first name</p>
+                    <input type="text" placeholder="first name">
+             </div>
+             <div class="col-md-4">
+                <p>last name</p>
+                <input type="email" placeholder=" last name">
+            </div>
+            <div class="col-md-4">
+                <p>NRIC</p>
+                <input type="number" placeholder="nric">
+            </div>
+        </div>
+        <br>
+         
+        <div class="row">
+            <div class="col-md-4">
+                    <p>DOB</p>
+                    <input type="date">
+             </div>
+             <div class="col-md-4">
+                <p>Gender</p>
+                <input type="radio" value="MALE" name="gender"> MALE
+                <input type="radio" value="FEMALE" name="gender"> FEMALE
+            </div>
+            <div class="col-md-4">
+      
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                    <p>level</p>
+                    <input type="radio" value="begginer" name="gender"> begginer
+                    <input type="radio" value="inter" name="gender">  intermediate
+             </div>
+             <div class="col-md-4">
+                <p>Select inter level</p>
+                <select name="level">
+                  <option value="1">25 meter</option>
+                  <option value="1">30 meter</option>
+                  <option value="1">35 meter</option>
+                  <option value="1">45 meter</option>
+                  <option value="1">55 meter</option>
+                  <option value="1">65 meter</option>
+                  <option value="1">75 meter</option>
+                  <option value="1">85 meter</option>
+                </select>
+                
+            </div>
+            <div class="col-md-4">
+      
+            </div>
+        </div>
+         <hr/>
+        <div class="row">
+              <div class="col-md-12">
+                  <input type="checkbox" value='yes'>    DO YOU WANT TO TAKE A TRAIL FIRST. 
+                  <br><br>
+                  <input type="submit" value="submit">
+              </div>
+        </div>
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
