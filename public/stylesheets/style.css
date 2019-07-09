@@ -3,6 +3,10 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.length
+{
+  width: 100%;
+}
  img
  {
    height: 150px;

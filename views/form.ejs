@@ -2,7 +2,6 @@
 <html>
 
 <head>
-  <title><%= title %></title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -24,18 +23,21 @@
           <div class="row">
             <div class="col-md-6">
               <p>Name</p>
-              <input type="text" class="length" id="father_name" placeholder="Enter your father name">
+              <input type="text" class="length" id="father_name" placeholder="Enter your father name"
+                value="<%= form_data.father_name %>">
             </div>
             <div class="col-md-6">
               <p>NRIC</p>
-              <input type="number" class="length" id="father_nric" placeholder="Enter your father NRIC Number">
+              <input type="number" class="length" id="father_nric" placeholder="Enter your father NRIC Number"
+                value="<%= form_data.father_nric %>">
             </div>
           </div>
           <br>
           <div class="row">
             <div class="col-md-6">
               <p>Phone number</p>
-              <input type="number" class="length" id="father_phone" placeholder="phone">
+              <input type="number" class="length" id="father_phone" placeholder="phone"
+                value="<%= form_data.father_phone %>">
             </div>
             <div class="col-md-6">
 
@@ -48,18 +50,21 @@
           <div class="row">
             <div class="col-md-6">
               <p>Name</p>
-              <input type="text" class="length" id="mother_name" placeholder="Enter your mother name">
+              <input type="text" class="length" id="mother_name" placeholder="Enter your mother name"
+                value="<%= form_data.mother_name %>">
             </div>
             <div class="col-md-6">
               <p>NRIC</p>
-              <input type="number" class="length" id="mother_nric" placeholder="Enter your mother NRIC Number">
+              <input type="number" class="length" id="mother_nric" placeholder="Enter your mother NRIC Number"
+                value="<%= form_data.mother_nric %>">
             </div>
           </div>
           <br>
           <div class="row">
             <div class="col-md-6">
               <p>Phone number</p>
-              <input type="number" class="length" id="mother_phone" placeholder="phone">
+              <input type="number" class="length" id="mother_phone" placeholder="phone"
+                value="<%= form_data.mother_phone %>">
             </div>
             <div class="col-md-6">
 
@@ -77,21 +82,22 @@
       <div class="row">
         <div class="col-md-4">
           <p>Email</p>
-          <input type="email" class="length" id="email" placeholder="enter your email">
+          <input type="email" class="length" id="email" placeholder="enter your email" value="<%= form_data.email %>">
 
 
 
         </div>
         <div class="col-md-8">
           <p>Address</p>
-          <input type="text" class="length" id="address" placeholder="enter your Address">
+          <input type="text" class="length" id="address" placeholder="enter your Address"
+            value="<%= form_data.address %>">
         </div>
       </div>
       <br>
       <div class="row">
         <div class="col-md-4">
           <p>join date</p>
-          <input type="date" id="join_date">
+          <input type="date" id="join_date" value="<%= form_data.join_date %>">
         </div>
         <div class="col-md-8">
 
@@ -104,15 +110,18 @@
       <div class="row">
         <div class="col-md-4">
           <p>first name</p>
-          <input type="text" class="length" id="student_name" placeholder="first name">
+          <input type="text" class="length" id="student_name" placeholder="first name"
+            value="<%= form_data.student_name %>">
         </div>
         <div class="col-md-4">
           <p>last name</p>
-          <input type="text" class="length" id="student_last" placeholder=" last name">
+          <input type="text" class="length" id="student_last" placeholder=" last name"
+            value="<%= form_data.student_last %>">
         </div>
         <div class="col-md-4">
           <p>NRIC</p>
-          <input type="number" class="length" id="student_nric" placeholder="nric">
+          <input type="number" class="length" id="student_nric" placeholder="nric"
+            value="<%= form_data.student_nric %>">
         </div>
       </div>
       <br>
@@ -171,9 +180,53 @@
 
     </div>
   </div>
-  
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <br><br>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"><%= form_data.father_name %>"</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <hr>
+        <div class="modal-content">
+          <h3 class="modal-title1"><%= form_data.mother_name %>"</h3>
+        </div>
+        <hr>
+        <div class="modal-title3">
+          <h2 class="modal-title2"><%= form_data.student_name %>"</h2>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h5 class="modal-title3"><%= form_data.father_phone %>"</h5>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
@@ -181,43 +234,6 @@
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
 
-  <script>
-
-    $(".test_btn").click(function () {
-
-      let data =
-      {
-        father_name: $("#father_name").val(),
-        father_nric: $("#father_nric").val(),
-        father_phone: $("#father_phone").val(),
-        mother_name: $("#mother_name").val(),
-        mother_nric: $("#mother_nric").val(),
-        mother_phone: $("#mother_phone").val(),
-        email: $("#email").val(),
-        address: $("#address").val(),
-        join_date: $("#join_date").val(),
-        student_name: $("#student_name").val(),
-        student_nric: $("#student_nric").val(),
-        student_last: $("#student_last").val(),
-        DOB: $("#DOB").val(),
-        gender: $("input[type=radio][name=gender]:checked").val(),
-        level: $("input[type=radio][name=level]:checked").val(),
-        inter_level: $("select#inter_level option:checked").val(),
-        trial: $("input[type=checkbox][name=trial]:checked").val(),
-      }
-
-      $.post("/form", data);
-
-      // $.ajax({
-      //   type: "POST",
-      //   url: "/form",
-      //   data: data,
-      //   success: success,
-      //   dataType:
-      // });
-
-    });
-  </script>
 </body>
 
 </html>
