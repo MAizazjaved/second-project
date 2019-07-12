@@ -1,9 +1,21 @@
+@font-face {
+  font-family: 'avenirfont';
+  src: url('/fonts/AvenirNext-Bold.woff') format('woff'),url('/fonts/AvenirNext-Bold.woff2') format('woff2');
+  font-weight: bold;
+  src: url('/fonts/AvenirNext-Medium.woff') format('woff'),url('/fonts/AvenirNext-Medium.woff2') format('woff2');
+  font-weight: normal;
+  src: url('/fonts/AvenirNext-Regular.woff') format('woff'),url('/fonts/AvenirNext-Regular.woff2') format('woff2');
+  font-weight: initial;
+  
+
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-.length
+/*.length
 {
   width: 100%;
 }
@@ -22,4 +34,42 @@ body {
  {
    font-family: arial;
    color:gray;
+ }*/
+
+ /*design*/
+ body
+ {
+   padding: 0%;
  }
+ 
+ /*
+ #navbarNavDropdown>ul>li>a
+ {
+   color: black;
+   padding-left: 20px;
+   font-size: 10px;
+   font-family: 'avenirfont';
+   font-weight: bold;
+ }
+ #navbarNavDropdown>ul
+ {
+  width: 100px;
+  padding-left: 30px; 
+ }
+   
+  .navbar-brand
+  {
+    padding-left: 265px;
+  }
+  nav{
+    height: 40px;
+  }
+  .icons
+  {
+    padding:275px;  
+  }
+  .icons>i
+{
+  padding-left:10px;
+}
+ */
