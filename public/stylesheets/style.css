@@ -1,19 +1,26 @@
 @font-face {
   font-family: 'avenirfont';
-  src: url('/fonts/AvenirNext-Bold.woff') format('woff'),url('/fonts/AvenirNext-Bold.woff2') format('woff2');
-  font-weight: bold;
-  src: url('/fonts/AvenirNext-Medium.woff') format('woff'),url('/fonts/AvenirNext-Medium.woff2') format('woff2');
-  font-weight: normal;
-  src: url('/fonts/AvenirNext-Regular.woff') format('woff'),url('/fonts/AvenirNext-Regular.woff2') format('woff2');
-  font-weight: initial;
-  
-
+  src: url('/fonts/AvenirNext-Bold.woff') format('woff'), url('/fonts/AvenirNext-Bold.woff2') format('woff2');
+  font-weight: 600;
 }
 
+@font-face {
+  font-family: 'avenirfont';
+  src: url('/fonts/AvenirNext-Medium.woff') format('woff'), url('/fonts/AvenirNext-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'avenirfont';
+  src: url('/fonts/AvenirNext-Regular.woff') format('woff'), url('/fonts/AvenirNext-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+/*
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+}*/
 
 /*.length
 {
@@ -36,40 +43,669 @@ body {
    color:gray;
  }*/
 
- /*design*/
- body
+/*design*/
+
+/*body
  {
    padding: 0%;
  }
- 
- /*
- #navbarNavDropdown>ul>li>a
- {
-   color: black;
-   padding-left: 20px;
-   font-size: 10px;
-   font-family: 'avenirfont';
-   font-weight: bold;
- }
- #navbarNavDropdown>ul
- {
-  width: 100px;
-  padding-left: 30px; 
- }
-   
-  .navbar-brand
-  {
-    padding-left: 265px;
-  }
-  nav{
-    height: 40px;
-  }
-  .icons
-  {
-    padding:275px;  
-  }
-  .icons>i
-{
-  padding-left:10px;
-}
  */
+
+/*********** BODY*********************** */
+
+body {
+  font-family: 'avenirfont';
+}
+
+main {
+  background-color: #F0F4F7;
+}
+
+/* *************************container************************ */
+
+#navbarNavDropdown>ul>li>:hover {
+  background-color: gray;
+  color: whitesmoke;
+}
+
+.navbar {
+  height: 50px;
+}
+
+.navbar-brand {
+  margin-left: 0px;
+}
+
+#navbarNavDropdown {
+  margin-left: 0px;
+}
+
+#navbarNavDropdown>ul>li>a {
+  color: black;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.icons1>a {
+  color: black;
+  padding: 3px;
+}
+
+.icons>a:hover {
+  color: blueviolet;
+  padding: 3px;
+}
+
+.icons1>a:hover {
+  color: blueviolet;
+  padding: 3px;
+}
+
+.icons>a {
+  color: black;
+  padding: 5px;
+}
+
+/********************* slider css *********************/
+
+.carousel-caption {
+  background-color: white;
+  padding: 30px;
+  color: black;
+  left: 138px;
+  position: absolute;
+  top: 160px;
+  bottom: 103px;
+  width: 366px;
+  height: 220px;
+  font-size: 14px;
+}
+
+.carousel-caption>h4 {
+  font-family: "avenirfont";
+  font-weight: bold;
+}
+
+.carousel-caption>p {
+  font-family: "avenirfont";
+  font-weight: 500;
+}
+
+.carousel-caption>a {
+  position: absolute;
+  right: 23px;
+  bottom: 18px;
+}
+
+.carousel-caption .fa {
+  padding-left: 4px;
+}
+
+.carousel {
+  margin-top: 0px;
+}
+
+/* ***********************Slider end************************* */
+
+/* ************************** more details ***********************/
+
+.MoreDetails {
+  font-family: "avenirfont";
+  font-weight: 500;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.MoreDetails .fa {
+  color: #EFAF2E;
+  font-size: 20px;
+}
+
+.MoreDetails .fa:hover {
+  color: burlywood;
+  font-size: 20px;
+}
+
+.MoreDetails p {
+  color: #000000;
+}
+
+/* ***********************MORE DETAILS END*************************** */
+
+/* *********************** PRODUCTS SECTION ***************************** */
+
+.products_parent {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.BOX_1 {
+  flex-basis: 300px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 280px;
+  padding-left: 20px
+}
+
+.Products {
+  padding-top: 20px;
+}
+
+.BOX_1 i {
+  font-size: 12px;
+}
+
+.BOX_1 img {
+  width: 65px;
+  padding-bottom: 45px;
+  padding-top: 2px;
+}
+
+.BOX_1 p {
+  font-size: 10px;
+  text-align: justify;
+}
+
+.ProductBox h3 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "avenirfont";
+}
+
+.SellerProducts .ProductBox {
+  background-color: #1D74BB;
+  color: #FFFFFF;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
+
+.SellerProducts a {
+  font-family: "avenirfont";
+  font-weight: 500;
+  color: #000000;
+}
+
+.SellerProducts .DetailBox {
+  background-color: #FFFFFF;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.SellerProducts h2 {
+  padding-left: 18px;
+}
+
+.SellerProducts .DetailBox p {
+  font-weight: 500;
+  margin-top: -10px;
+  font-style: italic;
+}
+
+.SellerProducts .DetailBox .Bar {
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 2px;
+}
+
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+}
+
+.SellerProducts .DetailBox .Price {
+  font-weight: normal;
+  padding-left: 10px;
+  font-size: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin-bottom: -20px;
+}
+
+.SellerProducts .DetailBox .Price span {
+  color: #4AAAB2;
+  font-weight: 500;
+  font-size: 10px;
+  float: right;
+}
+
+.SellerProducts .DetailBox .Price del {
+  color: #000000;
+  font-size: 10px;
+  font-weight: 500;
+  float: right;
+}
+
+.SellerProducts .DetailBox .btn {
+  display: block;
+  vertical-align: middle;
+  background-color: #0099A7;
+  border: #0099A7 2px solid;
+  margin-top: 50px;
+  font-size: 12px;
+  color: #FFFFFF;
+  font-weight: bold;
+  width: 70%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.SellerProducts .DetailBox .btn:hover {
+  background-color: transparent;
+  border: #0099A7 2px solid;
+  color: #000000;
+}
+
+.DetailBox .panel-group .panel .panel-heading a {
+  font-weight: 400px;
+  font-size: 10px;
+}
+
+.SellerProducts .DetailBox .panel-group .panel .panel-heading i {
+  float: right;
+}
+
+.SellerProducts .DetailBox .panel-group {
+  padding-top: 15px;
+}
+
+/* ***********************************  Products Addedd ENd ************************************************* */
+
+/* ************************************* Brain Excercise Section  *******************************/
+
+.BrainExcersice {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-family: "avenirfont";
+  margin-right: initial;
+}
+
+.BrainExcersice .fa {
+  margin-top: 40px;
+  color: #EFAF2E;
+  font-size: 40px;
+}
+
+.BrainExcersice h1 {
+  font-weight: 600;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.BrainExcersice p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+
+.BrainExcersice .Link {
+  margin-top: -40px;
+}
+
+.BrainExcersice .Link a {
+  font-weight: 600;
+  color: #109CAE;
+  font-size: 15px;
+}
+
+.BrainExcersice .Link .fa {
+  color: #109CAE;
+  font-size: 15px;
+  padding-left: 7px;
+}
+
+.BrainExcersice img {
+  width: 100%;
+}
+
+/* ******************************Excercise section End***************************** */
+
+/* *************************  HEALTH HUB START*************************************** */
+
+.healthbox_parent {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.healthhub {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.healthhub a {
+  font-family: "avenirfont";
+  font-weight: 500;
+  color: #000000;
+}
+
+.healthhub h1 {
+  font-weight: 600;
+  font-size: 23px;
+  padding-left: 12px;
+}
+
+.HealthBox .Link {
+  padding-bottom: 20px;
+}
+
+.HealthBox {
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  margin-left: 10px;
+  width: 200px;
+}
+
+.HealthBox .img-responsive {
+  width: 100%;
+}
+
+.HealthBox p {
+  font-size: 9px;
+  padding-left: 4px;
+  padding-right: 1px;
+  padding-top: 12px;
+  text-align: justify;
+}
+
+.HealthBox h3 {
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 4px;
+}
+
+.HealthBox a {
+  font-size: 12px;
+  padding-left: 5px;
+  color: #0098B9;
+}
+
+/* *************************** HEALTH HUB END ***************************************** */
+
+/* *************************** FOOD ***************************************** */
+
+.HealthyFoodPlan {
+  margin-top: 0px;
+  margin-bottom: 80px;
+  font-family: "avenirfont";
+  margin-right: initial;
+}
+
+.HealthyFoodPlan h1 {
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 110px;
+}
+
+.HealthyFoodPlan p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+
+.HealthyFoodPlan img {
+  width: 100%;
+}
+
+.HealthyFoodPlan .btn {
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+/* food end */
+
+/* *************************footer **************************** */
+
+.row.custom-row {
+  padding-bottom: 65px;
+}
+
+.footer {
+  background-color: #4A4A4A;
+  color: #FFFDFE;
+  font-family: "avenirfont";
+  font-weight: 400;
+  padding-top: 40px;
+}
+
+.footer h4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footer a {
+  color: #FFFDFE;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer .footerLinks {
+  padding-bottom: 25px;
+  padding-top: 20px;
+}
+
+.footer .btn {
+  font-weight: 600;
+  font-size: 14px;
+  height: 45px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+.footer .FooterLogo img {
+  float: left;
+  width: 20%;
+  padding-top: 10px;
+}
+
+.footer .circle {
+  border: 1px solid black;
+}
+
+.footer .SocialIcon img {
+  float: right;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 3px 5px;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 11px;
+}
+
+.footer h5 {
+  font-size: 14px;
+  text-align: right;
+  margin-top: 11px;
+}
+
+/*********************MEDIA QUERY FOR LAPTOP AND PC ********************/
+
+@media screen and (min-width: 1200px) {}
+
+/************ Landscape tablets and medium desktops ******************/
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/**************   Portrait tablets and small desktops **************/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* food */
+  .healthhub a {
+    font-size: 13px;
+  }
+  .HealthyFoodPlan h1 {
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: 57px;
+  }
+  .HealthyFoodPlan p {
+    font-size: 11px;
+  }
+  .HealthyFoodPlan .btn {
+    height: 32px;
+    font-size: 11px;
+  }
+  /* brain excercise */
+  .BrainExcersice .fa {
+    margin-top: 40px;
+    font-size: 40px;
+  }
+  .BrainExcersice h1 {
+    font-size: 18px;
+    padding-top: 8px;
+  }
+  .BrainExcersice p {
+    font-size: 10px;
+  }
+  .BrainExcersice .Link {
+    margin-top: -45px;
+  }
+  .BrainExcersice .Link a {
+    font-size: 12px;
+  }
+  .BrainExcersice .Link .fa {
+    font-size: 10px;
+    padding-left: 4px;
+  }
+}
+
+/************** Landscape phones and portrait tablets ************************/
+
+@media screen and (max-width: 767px) {
+  /* food */
+  .healthhub a {
+    font-size: 12px;
+  }
+  .SellerProducts a {
+    font-size: 12px;
+  }
+  .HealthyFoodPlan h1 {
+    font-weight: 600;
+    font-size: 11px;
+    padding-top: 35px;
+  }
+  .HealthyFoodPlan p {
+    font-size: 10px;
+  }
+  .HealthyFoodPlan .btn {
+    height: 32px;
+    font-size: 11px;
+  }
+  /* *********************Brain Excercise *****************/
+  .BrainExcersice {
+    margin-top: 20px;
+  }
+  .BrainExcersice .fa {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .BrainExcersice h1 {
+    font-size: 12px;
+    padding-top: 6px;
+  }
+  .BrainExcersice p {
+    font-size: 8px;
+  }
+  .BrainExcersice .Link {
+    margin-top: -30px;
+  }
+  .BrainExcersice .Link a {
+    font-size: 8px;
+  }
+  .BrainExcersice .Link .fa {
+    font-size: 8px;
+    padding-left: 4px;
+  }
+  /* *********************** Brain Excercise ******************************** */
+}
+
+/********************* Portrait phones and smaller ************************8*/
+
+@media screen and (max-width: 575px) {
+  /* food */
+  .healthhub a {
+    font-size: 12px;
+    margin-left: 18px;
+  }
+  .SellerProducts a {
+    font-size: 12px;
+    margin-left: 20px;
+  }
+  .HealthyFoodPlan h1 {
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: 57px;
+  }
+  .HealthyFoodPlan p {
+    font-size: 11px;
+  }
+  .HealthyFoodPlan .btn {
+    height: 32px;
+    font-size: 11px;
+  }
+  .HealthyFoodPlan .btn {
+    margin-bottom: 10px;
+  }
+  /* brain excercise */
+  .BrainExcersice {
+    margin-top: 10px;
+  }
+  /******* carousel caption *******/
+  .carousel-caption {
+    padding: 18px;
+    left: 65px;
+    width: 255px;
+    height: 220px;
+  }
+  /* nav brand */
+  .navbar-brand {
+    margin-left: 5px;
+  }
+  nav {
+    z-index: 1;
+  }
+  #navbarNavDropdown>ul {
+    background-color: white;
+    flex-direction: row;
+    margin-left: -55px;
+    margin-right: -46px;
+  }
+  #navbarNavDropdown>ul>li>a {
+    margin-left: 25px;
+    padding-left: 18px;
+    text-align: center;
+  }
+  #navbarNavDropdown>ul>li>:focus {
+    background-color: black;
+    color: whitesmoke;
+  }
+  /* *******************Health hub *********8 */
+  .HealthBox {
+    padding-bottom: 10px;
+  }
+  .healthhub {
+    padding-bottom: 10px;
+  }
+}
+
+}

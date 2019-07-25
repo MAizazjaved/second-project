@@ -102,4 +102,12 @@ router.get('/design',function(req,res,next){
     res.render('design');
 });
 
+router.get('/login',function(req,res,next){
+    res.render('login');
+});
+
+router.get('/products',function(req,res,next){
+    res.render('products');
+});
+
 module.exports = router;
