@@ -23,7 +23,7 @@
             </button>
 
             <!--********* main logo  ******88-->
-            <a>
+            <a href="design">
                 <img class="navbar-brand" src="/images/logo-blackmores.svg" alt="logo">
             </a>
 
@@ -42,19 +42,19 @@
                 <ul class="navbar-nav text-center">
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#"> Products <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="products"> Products <span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Healths</a>
+                        <a class="nav-link" href="login">Healths</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pets</a>
+                        <a class="nav-link" href="order">Pets</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">More</a>
+                        <a class="nav-link" href="/">More</a>
                     </li>
 
                 </ul>
@@ -115,10 +115,12 @@
 
     <div class="main">
         <div class="product_add">
-            <div class="caption_header d-none d-sm-block">
-                <h5>Save 30% with our Easter Eggstravenganza!</h5>
+            <div class="caption_header d-none d-sm-block" id="caption_header">
+                <center>
+                    <h5>Save 30% with our Easter Eggstravenganza!</h5>
+                </center>
             </div>
-            <div class="main_caption">
+            <div class="main_caption" id="main_caption">
                 <h4>
                     Joint Formula Advanced Glucosamine & Chondroitin with MSM Booster
                 </h4>
@@ -126,29 +128,38 @@
                     A great tasting magnesium powder which may help relieve muscle cramps & spasms and support energy
                     production during exercise.
                 </p>
-                <select>
-                    <option> 150 capsules / $0.56 per capsules</option>
-                    <option> 150 capsules / $0.56 per capsules</option>
-                    <option> 150 capsules / $0.56 per capsules</option>
-                    <option> 150 capsules / $0.56 per capsules</option>
-                    <option> 150 capsules / $0.56 per capsules</option>
-                </select>
-            </div>
 
-            <center>
-                <div class="alert_product">
+                <div class="product_name_select">
+                    <select id="product_name">
+                        <option value="100"> 150 capsules / $0.56 per capsules </option>
+                        <option value="200"> 200 capsules / $2.56 per capsules</option>
+                    </select>
+                </div>
+
+
+                <div class="alert_product" id="alert_product">
+
                     <center>
                         <p> This product is out of stock </p>
                     </center>
+
                 </div>
-            </center>
 
-            <div class="last_caption">
-                <input type="button" class="btn btn-info" value="Notify when in task">
-                <div class="Price"><span>$39.99</span><br> <del>$37.99</del></div>
+                <div class="product_name_select d-none delivery pt-2">
+                    <select id="product_name">
+                        <option> Dilivery this Month</option>
+                        <option> Dilivery this week</option>
+                    </select>
+                </div>
+
+                <div class="description pt-2" id="description"></div>
+
+                <div class="last_caption" id="last_caption">
+                    <input type="button" class="btn btn-info" value="Notify when in task">
+                    <div class="Price" id="Price"><span>$39.99</span><br> <del>$37.99</del></div>
+                </div>
+
             </div>
-
-
 
         </div>
 
@@ -159,12 +170,17 @@
                     <h1>The Blackmores difference</h1>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 difference_padd">
-                    <p>Antioxidants act as ‘free-radical scavengers'. Free radicals are common in the body, occurring
-                        from a variety of factors including stress, pollutants, sun and cigarette smoke. Accumulation of
-                        free radicals can result in cellular damage.
-                        Blackmores Bio ACE® Excell is specifically formulated to combat free-radicals and reduce the
-                        risk of cell damage. This potent combination includes grape seed, milk thistle and an organic
-                        form of selenium plus other antioxidants.</p>
+                    <div class="difference_text">
+                        <p>Antioxidants act as ‘free-radical scavengers'. Free radicals are common in the body,
+                            occurring
+                            from a variety of factors including stress, pollutants, sun and cigarette smoke.
+                            Accumulation of
+                            free radicals can result in cellular damage.
+                            Blackmores Bio ACE® Excell is specifically formulated to combat free-radicals and reduce the
+                            risk of cell damage. This potent combination includes grape seed, milk thistle and an
+                            organic
+                            form of selenium plus other antioxidants.</p>
+                    </div>
                 </div>
 
             </div>
@@ -176,8 +192,8 @@
         <!-- benefits -->
         <div class="container benefits">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 benefits_color">
-                    <div class="box_1">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 box-color-purple">
+                    <div class="box box-color-purple">
                         <h3>Benefits</h3>
                         </br>
                         <h5>This powerful combination helps to:</h5>
@@ -192,8 +208,8 @@
                     </div>
 
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 benefits_color_1">
-                    <div class="box_2">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 box-color-white">
+                    <div class="box">
                         <h3>Dosage</h3>
                         </br>
                         <h5>Adults</h5>
@@ -214,9 +230,9 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
                     <h3>Active <br> ingredients</h3>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 padding-cards">
 
-                    <div class="Box" data-toggle="collapse" data-target="#demo">
+                    <div class="card" data-toggle="collapse" data-target="#demo_6">
                         <table width="100%">
                             <tr>
                                 <td width="20%"><img src="/images/1523778407817_grapesgreen.jpg" width="100px;"></td>
@@ -229,19 +245,71 @@
                                 </td>
                             </tr>
                         </table>
-                        <div id="demo" class="collapse">
-                            <p>Ascorbic acid (vitamin C) is a water-soluble antioxidant nutrient involved in many
-                                biological processes in the body. Vitamin C is found in a number of fruits and
-                                vegetables, great sources are capsicums, blackcurrants, oranges and strawberries.</p>
+                        <div id="demo_6" class="collapse">
+                            <div class="card-body">
+                                <p>Ascorbic acid (vitamin C) is a water-soluble antioxidant nutrient involved in many
+                                    biological processes in the body. Vitamin C is found in a number of fruits and
+                                    vegetables, great sources are capsicums, blackcurrants, oranges and strawberries.
+                                </p>
+                            </div>
                         </div>
 
                     </div>
 
+                    <div class="card" data-toggle="collapse" data-target="#demo_5">
+                        <table width="100%">
+                            <tr>
+                                <td width="20%"><img src="/images/1523778407817_grapesgreen.jpg" width="100px;"></td>
+                                <td width="70%">
+                                    <p><strong>Ascorbic acid (vitamin C) </strong><br>
+                                        <span>200 mg</span></p>
+                                </td>
+                                <td width="10%">
+                                    <i class="fa fa-plus-circle"></i>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="demo_5" class="collapse">
+                            <div class="card-body">
+                                <p>Ascorbic acid (vitamin C) is a water-soluble antioxidant nutrient involved in many
+                                    biological processes in the body. Vitamin C is found in a number of fruits and
+                                    vegetables, great sources are capsicums, blackcurrants, oranges and strawberries.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card" data-toggle="collapse" data-target="#demo_4">
+                        <table width="100%">
+                            <tr>
+                                <td width="20%"><img src="/images/1523778407817_grapesgreen.jpg" width="100px;"></td>
+                                <td width="70%">
+                                    <p><strong>Ascorbic acid (vitamin C) </strong><br>
+                                        <span>200 mg</span></p>
+                                </td>
+                                <td width="10%">
+                                    <i class="fa fa-plus-circle"></i>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="demo_4" class="collapse">
+                            <div class="card-body">
+                                <p>Ascorbic acid (vitamin C) is a water-soluble antioxidant nutrient involved in many
+                                    biological processes in the body. Vitamin C is found in a number of fruits and
+                                    vegetables, great sources are capsicums, blackcurrants, oranges and strawberries.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
                 </div>
 
 
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                    <div class="Box" data-toggle="collapse" data-target="#demo_1">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 padding-cards">
+                    <div class="card" data-toggle="collapse" data-target="#demo_1">
                         <table width="100%">
                             <tr>
                                 <td width="20%"><img src="/images/mixed-fruits.jpg" width="100px;"></td>
@@ -255,12 +323,65 @@
                             </tr>
                         </table>
                         <div id="demo_1" class="collapse">
-                            <p>Ascorbic acid (vitamin C) is a water-soluble antioxidant nutrient involved in many
-                                biological processes in the body. Vitamin C is found in a number of fruits and
-                                vegetables, great sources are capsicums, blackcurrants, oranges and strawberries.</p>
+                            <div class="card-body">
+                                <p>Ascorbic acid (vitamin C) is a water-soluble antioxidant nutrient involved in many
+                                    biological processes in the body. Vitamin C is found in a number of fruits and
+                                    vegetables, great sources are capsicums, blackcurrants, oranges and strawberries.
+                                </p>
+                            </div>
                         </div>
 
                     </div>
+
+
+                    <div class="card" data-toggle="collapse" data-target="#demo_2">
+                        <table width="100%">
+                            <tr>
+                                <td width="20%"><img src="/images/mixed-fruits.jpg" width="100px;"></td>
+                                <td width="70%">
+                                    <p><strong>Citrus bioflavonoids extract</strong><br>
+                                        <span>100 mg</span></p>
+                                </td>
+                                <td width="10%">
+                                    <i class="fa fa-plus-circle"></i>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="demo_2" class="collapse">
+                            <div class="card-body">
+                                <p>Ascorbic acid (vitamin C) is a water-soluble antioxidant nutrient involved in many
+                                    biological processes in the body. Vitamin C is found in a number of fruits and
+                                    vegetables, great sources are capsicums, blackcurrants, oranges and strawberries.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card" data-toggle="collapse" data-target="#demo_3">
+                        <table width="100%">
+                            <tr>
+                                <td width="20%"><img src="/images/mixed-fruits.jpg" width="100px;"></td>
+                                <td width="70%">
+                                    <p><strong>Citrus bioflavonoids extract</strong><br>
+                                        <span>100 mg</span></p>
+                                </td>
+                                <td width="10%">
+                                    <i class="fa fa-plus-circle"></i>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="demo_3" class="collapse">
+                            <div class="card-body">
+                                <p>Ascorbic acid (vitamin C) is a water-soluble antioxidant nutrient involved in many
+                                    biological processes in the body. Vitamin C is found in a number of fruits and
+                                    vegetables, great sources are capsicums, blackcurrants, oranges and strawberries.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
 
@@ -274,8 +395,8 @@
         <!-- cautions -->
         <div class="container cautions">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 cautions_padd">
-                    <div class="box_1">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-0 padding-right">
+                    <div class="box">
                         <h3>Cautions</h3>
                         </br>
 
@@ -285,7 +406,7 @@
                                 stones) as Ascorbic acid may increase the risk of recurrence of calcium oxalate calculi
                             </li>
                             <li>If you are pregnant or breastfeeding consult your healthcare professional before use
-                            </li>
+                                </li>
                             <li>Vitamin supplements should not replace a balanced diet</li>
                             <li>Not to be used by children under 4 years of age without medical advice</li>
 
@@ -293,12 +414,13 @@
                     </div>
 
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 cautions_padd_1">
-                    <div class="box_2">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pr-0 padding-left">
+                    <div class="box">
                         <h3>Medicine interactions</h3>
                         <p>This product may interfere with certain other medications you may be taking. Click here to
                             learn more.</p>
-                        </br>
+                         
+                        <hr>
                         <h3>Physical description</h3>
                         <p>An orange-pink, round flat shaped tablet with break bar.</p>
 
@@ -309,25 +431,25 @@
         <!-- suggestions -->
         <div class="container suggestions">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-0 suggestions_padd">
-                    <div class="box_1">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pl-0 padding-right">
+                    <div class="box">
                         <h3>Serving suggestions</h3>
                         </br>
                         <p>How to prepare:</p>
                         <ul>
-                            <li> Wash hands and all equipment before preparing Blackmores Toddler Milk Drink</li>
+                            <li>Wash hands and all equipment before preparing Blackmores Toddler Milk Drink</li>
                             <li> Measure the required amount of water and powder by consulting the feeding guide on the
                                 product
                                 label</li>
-                            <li> Use only the scoop provided, lightly fill one measurement of the powder and use
+                            <li>Use only the scoop provided, lightly fill one measurement of the powder and use
                                 levelling blade
                                 on tin. Pour powder into the water, stir or shake until the powder is dissolved</li>
                         </ul>
                     </div>
 
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pr-0 suggestions_padd_1">
-                    <div class="box_2">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pr-0 padding-left">
+                    <div class="box">
                         <h3>Why use</h3>
                         <p> Supported by 85 years of experience in natural health products and our in-house lactation
                             consultant, Blackmores has worked to create a unique formulation inspired by the best mum –
@@ -480,7 +602,7 @@
                     <h3>Frequently <br> asked questions </h3>
 
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pr-0 last_padd_1">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pr-0 last_padd_1 padding-cards">
 
                     <div class="accordion" id="accordionExample">
                         <div class="card">
@@ -567,28 +689,28 @@
                             </div>
                         </div>
                     </div>
-                   
+
                     <div class="social_icons">
                         <span>Share this Product</span>
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-instagram"></i>
                     </div>
-                
-                    
-                     
-               
+
+
+
+
 
 
                 </div>
 
-                
+
             </div>
         </div>
 
         <div class="container">
-                <hr>
-                <br>
+            <hr>
+            <br>
         </div>
 
 
@@ -622,21 +744,6 @@
 
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -648,6 +755,65 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+            $("#product_name").click(function () {
+
+
+                var product_value = $("#product_name").val();
+
+                if (product_value == 200) {
+                    $('.delivery').removeClass('d-none');
+                    $("#alert_product").addClass('d-none');
+                    $("#caption_header h5").text("On Sale");
+                    $("#caption_header").css("background-color", "#aa003e");
+                    $("#main_caption h4").text("Bio ACE® Excell");
+                    $("#main_caption p").text("Potent antioxidant formula designed to decrease oxidative stress to the body from free radicals")
+                    $("#description").html("<p>This medicine may not be right for you. Read the cautions below before purchase. Follow directions for use. If symptoms persist, worsen or change talk to your healthcare professional.</p>");
+                    $("#last_caption .btn").attr('value', 'Add to Cart');
+                    $(".last_caption .btn").removeClass("btn-info");
+                    $(".last_caption .btn").addClass("btn-add");
+                    $("#last_caption #Price span").text("$30");
+                    $("#last_caption #Price del").text("$37");
+                }
+                else if (product_value == 100) {
+                    $("#caption_header h5").text("Save 30% with our Easter Eggstravenganza!");
+                    $("#main_caption h4").text("Joint Formula Advanced Glucosamine & Chondroitin with MSM Booster");
+                    $("#caption_header").css("background-color", "#7f73e9");
+                    $('.delivery').addClass('d-none');
+                    $("#description").text("");
+                    $('#alert_product').removeClass('d-none');
+                    $("#alert_product p").text("Product not in Stock");
+                    $("#last_caption .btn").attr('value', 'Not in Stock');
+                    $(".last_caption .btn").removeClass("btn-add");
+                    $(".last_caption .btn").addClass("btn-info");
+                    
+                    
+                     
+                }
+
+
+
+
+            });
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

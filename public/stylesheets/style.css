@@ -71,7 +71,14 @@ main {
 .navbar {
   height: 50px;
 }
-
+.collapse ul
+{
+  margin-left:30px;
+}
+.collapse ul li
+{
+  margin-left:30px;
+}
 .navbar-brand {
   margin-left: 0px;
 }
@@ -369,34 +376,32 @@ main {
 /* ******************************Excercise section End***************************** */
 
 /* *************************  HEALTH HUB START*************************************** */
+.healthhub{
+  padding-bottom: 15px;
+}
+.healthhub h1{
+  margin-left:10px;
+}
 
 .healthbox_parent {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
-}
+} 
 
-.healthhub {
-  padding-top: 30px;
-  padding-bottom: 70px;
-}
-
-.healthhub a {
-  font-family: "avenirfont";
-  font-weight: 500;
-  color: #000000;
-}
-
-.healthhub h1 {
-  font-weight: 600;
-  font-size: 23px;
-  padding-left: 12px;
-}
+ .HealthBox p{
+  font-size: 12px;
+  margin-left: 10px;
+ }
 
 .HealthBox .Link {
   padding-bottom: 20px;
 }
 
+.HealthBox h3{
+  font-size: 24px;
+margin-left: 10px;
+}
 .HealthBox {
   flex-basis: 200px;
   flex-grow: 0;
@@ -410,21 +415,7 @@ main {
 .HealthBox .img-responsive {
   width: 100%;
 }
-
-.HealthBox p {
-  font-size: 9px;
-  padding-left: 4px;
-  padding-right: 1px;
-  padding-top: 12px;
-  text-align: justify;
-}
-
-.HealthBox h3 {
-  font-size: 14px;
-  font-weight: 600;
-  padding-left: 4px;
-}
-
+ 
 .HealthBox a {
   font-size: 12px;
   padding-left: 5px;

@@ -110,4 +110,16 @@ router.get('/products',function(req,res,next){
     res.render('products');
 });
 
+router.get('/order',function(req,res,next){
+    res.render('order');
+});
+
+router.get('/partial',function(req,res,next){
+    res.render('partial');
+});
+
+router.get('/newnav',function(req,res,next){
+    res.render('newnav');
+});
+
 module.exports = router;

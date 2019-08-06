@@ -32,7 +32,14 @@ body {
     background-color: gray;
     color: whitesmoke;
 }
-
+.collapse ul
+{
+  margin-left:30px;
+}
+.collapse ul li
+{
+  margin-left:30px;
+}
 .navbar {
     height: 50px;
 }

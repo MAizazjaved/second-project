@@ -1,0 +1,528 @@
+@font-face {
+    font-family: 'avenirfont';
+    src: url('/fonts/AvenirNext-Bold.woff') format('woff'), url('/fonts/AvenirNext-Bold.woff2') format('woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'avenirfont';
+    src: url('/fonts/AvenirNext-Medium.woff') format('woff'), url('/fonts/AvenirNext-Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'avenirfont';
+    src: url('/fonts/AvenirNext-Regular.woff') format('woff'), url('/fonts/AvenirNext-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+/* nav bar start */
+
+body {
+    font-family: 'avenirfont';
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 45px;
+    font-family: "avenirfont";
+    font-weight: 600;
+}
+
+h3 {
+    font-family: "avenirfont";
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+p {
+    font-size: 14px;
+}
+
+h5 {
+    font-family: "avenirfont";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+h6 {
+    font-family: "avenirfont";
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-right: 260px;
+}
+
+input {
+    width: 383px;
+    height: 36px;
+    font-size: 12px;
+    font-family: "avenirfont";
+    font-weight: 600;
+}
+
+.clear {
+    clear: both;
+}
+
+.main {
+    background-color: #EFF3F7;
+}
+
+/* ******************* nav bar****************************** */
+
+#navbarNavDropdown>ul>li>:hover {
+    background-color: gray;
+    color: whitesmoke;
+}
+
+.navbar {
+    height: 50px;
+}
+
+.navbar-brand {
+    margin-left: 0px;
+}
+.collapse ul
+{
+  margin-left:30px;
+}
+.collapse ul li
+{
+  margin-left:30px;
+}
+#navbarNavDropdown {
+    margin-left: 0px;
+}
+
+#navbarNavDropdown>ul>li>a {
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.icons1>a {
+    color: black;
+    padding: 3px;
+}
+
+.icons>a:hover {
+    color: blueviolet;
+    padding: 3px;
+}
+
+.icons1>a:hover {
+    color: blueviolet;
+    padding: 3px;
+}
+
+.icons>a {
+    color: black;
+    padding: 5px;
+}
+
+/*********************** nav bar end ************************/
+
+/* checkout start */
+
+.Page-Title-1-000000 {
+    width: 100%;
+    height: 18px;
+    font-family: "avenirfont";
+    font-size: 14px;
+    padding-top: 21px;
+    padding-left: 13px;
+    padding-bottom: 21px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: var(--black);
+}
+
+.side {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.container.Checkout {
+    height: 60px;
+}
+
+/* check out end */
+
+/* ********************************BANNER*********************** */
+
+.Banner {
+    height: 350px;
+    background-color: #7fbdbe;
+    padding-top: 100px;
+    padding-left: 75px;
+}
+
+.Banner .thankyou {
+    color: #fff;
+    width: 250px;
+    float: left;
+}
+
+.Banner .bag {
+    width: 220px;
+    margin-right: 27%;
+    float: right;
+}
+
+/* ****************Main Body ******************/
+
+.Main-body {
+    padding-left: 76px;
+    padding-top: 57px;
+    padding-bottom: 80px;
+}
+
+.btn {
+    background-color: #0099A7;
+    border: #0099A7 3px solid;
+    margin-top: 10px;
+    font-size: 12px;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.line .img-1 img {
+    height: 41px;
+    width: 30px;
+}
+
+.line .img-1 {
+    background-color: #0099A7;
+    height: 45px;
+    width: 45px;
+    padding-top: 1px;
+    padding-left: 8px;
+    padding-right: 7px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+}
+
+.line h5 {
+    margin-top: 10px;
+}
+
+.payment .payment-total {
+    margin-right: 90px;
+}
+
+.payment .payment-price {
+    color: #4a4a4a;
+}
+
+/* *************colm end ***********/
+
+/* *************************  HEALTH HUB START*************************************** */
+
+.healthbox_parent {
+    margin-top: -255px;
+    padding: 0;
+    color: #4a4a4a;
+    
+    /* display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll; */
+}
+
+.healthhub {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.HealthBox .Link {
+    padding-bottom: 20px;
+}
+
+.HealthBox {
+    /* flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0; */
+    background-color: #FFFFFF;
+    color: #000000;
+    margin-left: 20px;
+    /* width: 200px; */
+}
+
+.HealthBox .img-responsive {
+    width: 100%;
+    height: 198px;
+}
+
+/* .HealthBox p {
+    font-size: 9px;
+    padding-left: 4px;
+    padding-right: 1px;
+    padding-top: 12px;
+    text-align: justify;
+  }
+  
+  .HealthBox h3 {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 4px;
+  } */
+
+.HealthBox a {
+    font-size: 12px;
+    padding-left: 5px;
+    color: #0098B9;
+}
+
+/* *************************** HEALTH HUB END ***************************************** */
+
+/* ***********************footer *************************/
+
+.row.custom-row {
+    padding-bottom: 65px;
+}
+
+.footer {
+    background-color: #4A4A4A;
+    color: #FFFDFE;
+    font-family: "avenirfont";
+    font-weight: 400;
+    padding-top: 40px;
+}
+
+.footer h4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.footer a {
+    color: #FFFDFE;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer .footerLinks {
+    padding-bottom: 25px;
+    padding-top: 20px;
+}
+
+.footer .btn {
+    width: 75%;
+    font-weight: 600;
+    font-size: 14px;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.footer .FooterLogo img {
+    float: left;
+    width: 20%;
+    padding-top: 10px;
+}
+
+.footer .circle {
+    border: 1px solid black;
+}
+
+.footer .SocialIcon img {
+    float: right;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 3px 5px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.footer p {
+    font-weight: 400;
+    font-size: 11px;
+}
+
+.footer h5 {
+    font-size: 14px;
+    text-align: right;
+    margin-top: 11px;
+}
+
+/* *************************footer end**************************** */
+
+/* ************************************media queries ******************************* */
+
+@media (max-width: 575.98px) {
+
+    form h6
+    {
+            margin-right: 203px;
+            float: left;
+                
+    }
+    input
+    {
+        width: 100%;
+    } 
+    .bg-color {
+        background-color: #FFFDFE;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .HealthBox .img-responsive {
+        width: 276px;
+        height: 198px;
+    }
+    .HealthBox p {
+        font-size: 12px;
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 212px;
+    }
+    .HealthBox h3 {
+        margin-left: 10px;
+        padding-bottom: 5px;
+        width: 212px;
+    }
+    .Banner .bag {
+        width: unset;
+        margin-right: 0;
+        float: unset;
+    }
+    .Banner {
+        padding-top: 14px;
+        padding-left:14px;
+    }
+    .healthbox_parent {
+        margin-top: 10px;
+        padding-bottom: 100px;
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .Main-body {
+        padding-left: 16px;
+        padding-bottom: 0px;
+    }
+    .carousel-indicators li {
+        left: 100px;
+    }
+    .navbar-brand {
+        margin-left: 5px;
+    }
+    nav {
+        z-index: 1;
+    }
+    #navbarNavDropdown>ul {
+        background-color: white;
+        flex-direction: row;
+        margin-left: -55px;
+        margin-right: -46px;
+    }
+    #navbarNavDropdown>ul>li>a {
+        margin-left: 25px;
+        padding-left: 18px;
+        text-align: center;
+    }
+    #navbarNavDropdown>ul>li>:focus {
+        background-color: black;
+        color: whitesmoke;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .bg-color {
+        background-color: #FFFDFE;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .Main-body {
+        padding-left: 16px;
+        padding-bottom: 0px;
+    }
+
+    .HealthBox p {
+        font-size: 12px;
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 212px;
+    }
+    .HealthBox h3 {
+        margin-left: 10px;
+        padding-bottom: 5px;
+        width: 212px;
+    }
+
+    .Banner .bag {
+        margin-right: 0%;
+    }
+    .Banner {
+        padding-left: 50px;
+    }
+    .healthbox_parent {
+        margin-top: 10px;
+        padding-bottom: 100px;
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .bg-color {
+        background-color: #FFFDFE;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .Main-body {
+        padding-left: 16px;
+        padding-bottom: 0px;
+    }
+
+    .HealthBox p {
+        font-size: 12px;
+        margin-left: 10px;
+        margin-top: 10px;
+        
+        width: unset;
+    }
+    .HealthBox h3 {
+        margin-left: 10px;
+        padding-bottom: 5px;
+        width: unset;
+    }
+
+
+    .Banner .bag {
+        margin-right: 2%;
+    }
+    .healthbox_parent {
+        margin-top: 10px;
+        padding-bottom: 100px;
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    @media (min-width: 992px) and (max-width: 1199.98px) {}
+    @media (min-width: 1200px) {
+        .bg-color {
+            background-color: #FFFDFE;
+              
+        }
+    }
